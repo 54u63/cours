@@ -1,0 +1,34 @@
+1) je me connecte en ssh au raspberry en utilisant la commande "ssh pi@10.205.14.2" dans mon cas
+puis je rentre le mot de passe "raspberry"(credentiel par defaut).
+
+2)on installe ceci en utilisant la commande "sudo apt install mysql-server" dans mon cas, mysql etant deprecie
+j'ai installe mariadb-server qui fait le meme travail.
+
+3)on utilise la commande "lsof -i -P -n | grep LISTEN" pour afficher tout les socket ici en ecoute
+	-> on a le resultat suivant: mysqld     1361    mysql   21u  IPv4  23688      0t0  TCP 127.0.0.1:3306 (LISTEN)
+
+4)On se connecte d'abord a la base de donnee mysql avec "mysql -u root -p" avec le mot de passe par defaut "root"
+puis on on change le mot de passe root avec "ALTER USER root@localhost IDENTIFIED BY "rtbz22";" dans mon cas puis on
+cree l'utilisateur pi avec "CREATE USER pi@localhost IDENTIFIED BY "test";" puis on modifie le mot de passe avec
+SET PASSWORD FOR pi@localhost=""; pour que l'utilisateur pi puisse se connecter sans mot de passe.
+
+5)on installe apache2 avec "sudo apt install apache2 php phpmyadmin" puis on modifie le fichier /etc/apache2/apach2.conf
+avec vim et on ajoute la ligne 'Include /etc/phpmyadmin/apache2.conf'. On se connecte dessus avec l'hote distant avec
+une navigateur et joignant l'url "http://localhost/phpmyadmin"
+
+6)on se connect grace aux credentiel rentres plus tot, dans mon cas root et "rtbz22"
+
+8-7)Cf GdL.sql
+
+
+Partie2
+1) on modifie la configuration avec "vim /etc/mysql/mariadb.conf.d/50-server.conf" en changeant la ligne "bind-address"
+qui par dfaut est sur le local loopback on la remplace donc par sa propre ip. Puis on ouvre le port d'echange, le
+3306 comme vu en TD
+
+2) on utilise la commande "CREATE USER 'math3'@'%' IDENTIFIED BY "test";"
+3) on se connecte avec la commande "mysql -u math3 -h 10.205.14.2 -p" puis on entre le mot de passe ici "test"
+
+4) avec la capture de trame wireshark on voit que la couche applicative "mysql" affiche les donnees en clair.
+
+5)cf prochain tp

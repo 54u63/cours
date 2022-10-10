@@ -1,0 +1,15 @@
+3) securisation de la connexion
+	1)j'utilise la commande "openssl genrsa -des3 -out ***.key" en remplaceant ** par "server" et "client_1" pour
+	  creer deux clefs RSA pour le client ainsi que pour le serveur. Je cree la clef server sur le raspberry puis j'	  effectue la demande de signature avec "openssl req -new -key **.key -out ***.csr". Je recupere le csr du
+	  server avec scp sur le raspberry puis je cree une CA avec easyrsa en commecant par "easyrsa init-pki" puis
+	  "easyrsa build-ca". Ensuiste j'import les demandes de signatures avec "easyrsa import-req ***.csr ****"
+	  apres avoir importe les deux demande de signature je les signes avec "easyrsa sign-req server server" pour 
+	  le server puis "easyrsa sign-req client client_1" pour le client. Je renvoies ensuite la clef publique signee 	  au raspberry ainsi que la clef publique du client ainsi que celle de la CA
+
+	2)Apres avoir telecharge les certificats du serveur et de la CA sur le raspberry, je les importes dans le
+	  fichier /etc/mysql/my.cnf en ajoutant un nouveau groupe [Mariadb] et en ajoutant les variables ssl_cert
+	  ssl_key, ssl_ca pointant vers les chemins absoluts des certificats et de la clef privee du serveur.
+	  apres redemarrage du serveur l'option ssl n'est pas active du a un erreur de chemin. J'ai essaye de changer
+	  le proprietaire avec "chown mysql *.crt" mais cela n'a pas resolu le probleme
+
+2.5 je me connecte sur le serveur sql de mon camarade avec "mysql -u ISHOWSPEED -p -h 10.205.12.2" avec le mot de passe 	"LENS", je peux alors lire certains effets de la base de donnee GdL mais aussi modifier la table avisMath

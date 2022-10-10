@@ -1,0 +1,77 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            73:70:d0:5e:ce:ff:17:3b:55:2f:f1:02:58:e6:c3:a8
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=AUTHORITY
+        Validity
+            Not Before: Sep 23 08:23:32 2022 GMT
+            Not After : Dec 26 08:23:32 2024 GMT
+        Subject: C=FR, ST=Beziers, L=Herault, O=IUT, OU=RT, CN=Server/emailAddress=server@test.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (1024 bit)
+                Modulus:
+                    00:a5:48:1e:13:80:88:8a:9b:a8:47:79:33:87:57:
+                    5c:f6:2a:3d:7c:91:87:f5:8d:0d:69:91:d8:3d:9a:
+                    3a:4c:cb:cf:cf:cb:32:ab:8b:55:93:16:da:02:ea:
+                    ff:1c:da:ff:9c:e0:cd:38:8c:ff:3d:44:3b:2b:c4:
+                    ca:c5:90:7b:6b:32:90:a2:cb:fa:c7:08:ed:92:9e:
+                    9a:51:d0:c3:c2:0a:fa:06:fb:af:25:50:53:42:69:
+                    59:59:e6:51:00:c4:65:f9:0f:e9:72:86:17:36:9d:
+                    aa:ca:35:85:fa:a2:a1:f3:77:2e:4a:02:43:80:6c:
+                    83:cd:44:e5:21:e1:15:bf:2b
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                B4:A5:D6:8B:2C:12:5E:C3:5F:CC:86:CF:8E:14:7F:A8:E8:6D:52:C2
+            X509v3 Authority Key Identifier: 
+                keyid:D2:CB:73:FC:AD:B7:8A:D9:5E:6B:29:45:EC:16:2A:2D:0F:D3:60:C5
+                DirName:/CN=AUTHORITY
+                serial:4B:A4:17:03:34:5C:8F:32:EB:A8:D3:53:1A:5B:44:2E:BB:4B:1C:42
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:Server
+    Signature Algorithm: sha256WithRSAEncryption
+         a1:08:61:2f:f8:8e:27:15:5c:46:e5:7d:0a:a7:56:d9:2a:13:
+         14:14:de:a5:67:e1:eb:bb:e3:cd:ad:ea:1d:f2:25:4e:39:78:
+         4b:d5:11:07:55:b8:d3:f5:e0:96:37:a5:68:29:36:cf:de:e9:
+         46:2f:fe:0b:28:9c:10:c7:12:ec:4b:17:58:c1:68:cb:fc:03:
+         a0:a2:32:91:3a:5d:fb:67:21:35:6c:8c:54:65:19:9c:1f:18:
+         f3:55:91:1e:3d:ff:53:fc:ad:e3:a2:83:5f:a4:6b:3c:49:91:
+         0e:a4:b2:81:75:a5:bf:20:19:58:6c:8c:cc:9e:ab:b3:72:f5:
+         b8:60:a3:b6:df:08:91:cc:f8:86:be:7e:46:f9:bf:4b:1a:32:
+         29:b6:66:ea:b7:82:6e:87:98:4b:c4:70:02:18:e2:05:ba:c3:
+         0c:0c:62:b1:3a:c9:49:cf:0f:48:e4:a6:81:2e:6d:8f:2a:39:
+         0a:80:2b:cf:c5:37:2e:a5:22:6a:70:f5:e6:38:f3:52:1e:73:
+         cb:50:42:d0:3c:e0:8c:9d:da:9d:20:00:70:bb:2d:36:f1:18:
+         22:bc:08:a9:af:7d:4d:d0:ac:be:1a:5b:f0:11:ae:c3:93:57:
+         9d:5d:38:fd:70:a3:d4:00:d9:68:57:de:ab:cf:8c:ad:8b:77:
+         6c:42:b6:3a
+-----BEGIN CERTIFICATE-----
+MIIDSzCCAjOgAwIBAgIQc3DQXs7/FztVL/ECWObDqDANBgkqhkiG9w0BAQsFADAU
+MRIwEAYDVQQDDAlBVVRIT1JJVFkwHhcNMjIwOTIzMDgyMzMyWhcNMjQxMjI2MDgy
+MzMyWjB9MQswCQYDVQQGEwJGUjEQMA4GA1UECAwHQmV6aWVyczEQMA4GA1UEBwwH
+SGVyYXVsdDEMMAoGA1UECgwDSVVUMQswCQYDVQQLDAJSVDEPMA0GA1UEAwwGU2Vy
+dmVyMR4wHAYJKoZIhvcNAQkBFg9zZXJ2ZXJAdGVzdC5jb20wgZ8wDQYJKoZIhvcN
+AQEBBQADgY0AMIGJAoGBAKVIHhOAiIqbqEd5M4dXXPYqPXyRh/WNDWmR2D2aOkzL
+z8/LMquLVZMW2gLq/xza/5zgzTiM/z1EOyvEysWQe2sykKLL+scI7ZKemlHQw8IK
++gb7ryVQU0JpWVnmUQDEZfkP6XKGFzadqso1hfqiofN3LkoCQ4Bsg81E5SHhFb8r
+AgMBAAGjgbMwgbAwCQYDVR0TBAIwADAdBgNVHQ4EFgQUtKXWiywSXsNfzIbPjhR/
+qOhtUsIwTwYDVR0jBEgwRoAU0stz/K23itleaylF7BYqLQ/TYMWhGKQWMBQxEjAQ
+BgNVBAMMCUFVVEhPUklUWYIUS6QXAzRcjzLrqNNTGltELrtLHEIwEwYDVR0lBAww
+CgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMBEGA1UdEQQKMAiCBlNlcnZlcjANBgkq
+hkiG9w0BAQsFAAOCAQEAoQhhL/iOJxVcRuV9CqdW2SoTFBTepWfh67vjza3qHfIl
+Tjl4S9URB1W40/XgljelaCk2z97pRi/+CyicEMcS7EsXWMFoy/wDoKIykTpd+2ch
+NWyMVGUZnB8Y81WRHj3/U/yt46KDX6RrPEmRDqSygXWlvyAZWGyMzJ6rs3L1uGCj
+tt8Ikcz4hr5+Rvm/SxoyKbZm6reCboeYS8RwAhjiBbrDDAxisTrJSc8PSOSmgS5t
+jyo5CoArz8U3LqUianD15jjzUh5zy1BC0DzgjJ3anSAAcLstNvEYIrwIqa99TdCs
+vhpb8BGuw5NXnV04/XCj1ADZaFfeq8+MrYt3bEK2Og==
+-----END CERTIFICATE-----

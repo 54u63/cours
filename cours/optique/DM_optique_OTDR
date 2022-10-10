@@ -1,0 +1,30 @@
+1)la puissance retrodiffusee est la lumiere qui parcour le canal dans le sens inverse de la propacation de 
+l'impultion initiale
+
+2)on a la relation suivante A=10log(Preflechie/Pincidente)
+
+3)on a la relation suivante d1=(t1*(c/n))/2
+
+4)la reflectometrie fonctionne selon le principe suivant: on envoies une impulsion dans un des deux embout
+du signal puis on observe la puissance reflechie par les differents evenements de la fibre. il faut donc
+paramtrer la puissance emise par l'appareil en entre, la base de temps, la longueur de la fibre ansi que 
+son indice de de refraction.
+
+5) un epissure a pour effet une attenuation legere sur un tracee de reflectometrie dues aux desalignement
+des coeurs
+
+6) les connecteur provoque un pic de fresnel du au changement d'indice optique. 
+
+7) lorsqu'une puissance Pi arrive sur un evenenement avec un changement d'indice, on retrouve les
+schemas vu avec snell descartes. Il y a 3 puissances: une puissance incidente, un puissance 
+transmise (ou refractee) et une puissance reflechie. C'est cette puissance reflechie qui, en 
+s'ajoutant avec la puissance retrodiffusee va venir saturer l'amplificateur et la photo diode
+de l'OTDR et creer ce fameux pic. 
+
+8)en utilisant la formule vue en 3 on a 
+	da/v=(tav*(c/n))/2
+
+9)elle permet de mesurer les attnuation des connecteurs en entree de fibre
+
+
+
